@@ -1,0 +1,22 @@
+#%Module
+module-whatis	 "Loads cuda/12.8.0 module.
+
+This module was build on Thu May 15 10:12:16 AM EDT 2025
+
+The CUDA Toolkit (https://developer.nvidia.com/cuda-toolkit) is a parallel computing platform and programming model invented by NVIDIA. It enables dramatic increases in computing performance by harnessing the power of the graphics processing unit (GPU).
+
+The script used to build this module can be found here: https://github.com/northeastern-rc-software-modules/cuda-12.8.0
+
+To load the module, type:
+module load cuda/12.8.0
+"
+
+conflict	 cuda
+setenv     CUDA_HOME /shared/EL9/explorer/cuda/12.8.0
+setenv     CUDA_PATH /shared/EL9/explorer/cuda/12.8.0
+setenv     CUDA_VERSION 12.8.0
+prepend-path	 PATH /shared/EL9/explorer/cuda/12.8.0/bin
+prepend-path	 MANPATH /shared/EL9/explorer/cuda/12.8.0/doc/man
+prepend-path	 LD_LIBRARY_PATH /shared/EL9/explorer/cuda/12.8.0/lib64
+prepend-path	 CPATH /shared/EL9/explorer/cuda/12.8.0/include
+prepend-path	 LIBRARY_PATH /shared/EL9/explorer/cuda/12.8.0/lib64
